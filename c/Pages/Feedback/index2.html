@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            #navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                #navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                #navbar a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            .sticky + .content {
+                padding-top: 60px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Feedback</h2>
+        <p>Help us improve the site.</p>
+    </div>
+
+    <div id="navbar">
+        <a class="active" href="http://localhost:53087/index.html">Home</a>
+        <a href="javascript:void(0)">News</a>
+        <a href="javascript:void(0)">Contact</a>
+    </div>
+
+
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            border: 2px solid #ccc;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px 0
+        }
+
+            .container::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .container img {
+                float: left;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+
+            .container span {
+                font-size: 20px;
+                margin-right: 15px;
+            }
+
+        @media (max-width: 500px) {
+            .container {
+                text-align: center;
+            }
+
+                .container img {
+                    margin: auto;
+                    float: none;
+                    display: block;
+                }
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <img src="https://sun9-41.userapi.com/dKfQ4RAx0URX4U1c28zkg9HnLHZs2pC5WfQ0sg/g4pHlQzWlnc.jpg" alt="Avatar" style="width:90px">
+            <p><span>Daskal Nik</span> student</p>
+            <p>Cool site!</p>
+        </div>
+
+        <div class="container">
+            <img src="https://avatars.mds.yandex.net/get-zen_doc/1717677/pub_5df88137fc69ab00ac2172ca_5df8824fc49f29abdeb143aa/scale_1200" alt="Avatar" style="width:90px">
+            <p><span>Bill Gates</span> American entrepreneur</p>
+            <p>Perfect!</p>
+        </div>
+
+        <div class="container">
+            <img src="https://avatars.mds.yandex.net/get-zen_doc/1717677/pub_5df88137fc69ab00ac2172ca_5df8824fc49f29abdeb143aa/scale_1200" alt="Avatar" style="width:90px">
+            <p><span>Bill Gates</span> American entrepreneur</p>
+            <p>Perfect!</p>
+        </div>
+
+        <div class="container">
+            <img src="https://avatars.mds.yandex.net/get-zen_doc/1717677/pub_5df88137fc69ab00ac2172ca_5df8824fc49f29abdeb143aa/scale_1200" alt="Avatar" style="width:90px">
+            <p><span>Bill Gates</span> American entrepreneur</p>
+            <p>Perfect!</p>
+        </div>
+
+        <div class="container">
+            <img src="https://avatars.mds.yandex.net/get-zen_doc/1717677/pub_5df88137fc69ab00ac2172ca_5df8824fc49f29abdeb143aa/scale_1200" alt="Avatar" style="width:90px">
+            <p><span>Bill Gates</span> American entrepreneur</p>
+            <p>Perfect!</p>
+        </div>
+
+        <div class="container">
+            <img src="https://avatars.mds.yandex.net/get-zen_doc/1717677/pub_5df88137fc69ab00ac2172ca_5df8824fc49f29abdeb143aa/scale_1200" alt="Avatar" style="width:90px">
+            <p><span>Bill Gates</span> American entrepreneur</p>
+            <p>Perfect!</p>
+        </div>
+    </body>
+</html>
